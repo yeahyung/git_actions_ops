@@ -27,9 +27,6 @@ jobs:
       run: echo "::set-output name=date::$(date +'%y%m%d%H%m')"
       id: date
 
-    - name: Config Git Private
-      run: git config --global url."https://$REPO_USERNAME:$REPO_TOKEN@github.com:".insteadOf "https://github.com"
-
     - name: Java build
       run: /usr/lib/apache-maven-3.6.3/bin/mvn clean package -DskipTests=true -e
 
