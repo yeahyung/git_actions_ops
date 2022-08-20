@@ -22,3 +22,13 @@ kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.pas
 kubectl port-forward svc/argocd-server -n argocd 8080:80
 # localhost:8080 접속(username: admin, password: ${get password})
 ```
+
+### Install Docker
+
+ - https://docs.docker.com/engine/install/centos/
+
+### Maven Install
+
+ - https://www.centlinux.com/2018/12/install-apache-maven-3-on-centos-7.html
+
+### Set Git Self-Hosted-Runner

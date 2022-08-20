@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.example</groupId>
-    <artifactId>header-test</artifactId>
+    <artifactId>git_actions_ops</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>git_actions_ops</name>
     <description>git_actions_ops</description>
