@@ -31,4 +31,18 @@ kubectl port-forward svc/argocd-server -n argocd 8080:80
 
  - https://www.centlinux.com/2018/12/install-apache-maven-3-on-centos-7.html
 
-### Set Git Self-Hosted-Runner
+### Git Actions
+
+ - Set Git Self-Hosted-Runner
+   - [Settings] -> [Actions] -> [Runners]
+     - root 계정으로 실행할 경우 export RUNNER_ALLOW_RUNASROOT="1" 실행 
+   - Add Service File
+     - https://docs.github.com/en/actions/hosting-your-own-runners/configuring-the-self-hosted-runner-application-as-a-service
+ - Set Secrets for Git Access
+   - [Settings] -> [Secrets] -> [Actions]
+     - REPO_USERNAME
+     - REPO_TOKEN
+ - Set Secrets for Docker Hub Access
+   - [Settings] -> [Secrets] -> [Actions]
+     - REG_USERNAME
+     - REG_PASSWORD
