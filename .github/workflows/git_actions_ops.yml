@@ -42,5 +42,5 @@ jobs:
       with:
         context: .
         push: true
-        tags: $REG_USERNAME/git_actions_ops:latest, $REG_USERNAME/git_actions_ops:${{ steps.date.outputs.date }}
+        tags: yhb7788/git_actions_ops:latest, yhb7788/git_actions_ops:${{ steps.date.outputs.date }}
         file: ./Dockerfile
